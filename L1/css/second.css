@@ -5,14 +5,14 @@
 .bannerspan span{display: inline-block;width: 20px;height: 20px;border-radius: 100%;background-color: #FFFFFF;margin: 0 5px;}
 .bannerspan span:nth-of-type(2){background-color: #FF7700;cursor: pointer;}
 
-.sanji{position: absolute;top: 5px;height: 410px;width: 200px;left: 80px;}
+.sanji{position: absolute;top: 5px;height: 410px;width: 200px;left: 116px;}
 .company{background-color: #1D7AD9;}
 .sanjicon dl{border-bottom: 1px solid #086BD0;padding: 13px 12px;}
 .sanjicon dl dt a{font-family: "宋体";font-size: 14px;color: #fff;line-height: 26px;}
 .sanjicon dl dd a{color: #fff;line-height: 24px;margin-right: 10px;}
 .sanji a:hover{color: #FF7700;}
 
-.tuijian{position: absolute;top: 5px;height: 415px;right: 78px;}
+.tuijian{position: absolute;top: 5px;height: 415px;right: 116px;}
 .tuijian dl{width: 170px;height: 183px;background-color: #fff;padding: 10px;margin-bottom:5px;text-align: center;}
 .tuijian dl dt img{width: 160px;height: 160px;}
 
@@ -37,7 +37,8 @@
 .buyingtime strong{display: inline-block;float: left;background: url(../img/whole.png) no-repeat -134px -236px;width: 22px;height: 22px;margin-right: 10px;}
 .buyingtime span i{font-style: normal;color: #FF7701;font-weight: bold;}
 .buyinggo a{display:block;height: 32px;color: #FFFFFF;text-align: center;line-height: 32px;font-family: "微软雅黑";font-size: 14px;background-color: #B71C37;border-radius: 10px;margin-top: 10px;}
-
+.buyingzuo{background: url(../img/whole.png)no-repeat 0 -111px;display: block;width: 60px;height: 60px;position: absolute;left: 9px;top: 110px;cursor: pointer;}
+.buyingyou{background: url(../img/whole.png)no-repeat -65px -111px;display: block;width: 60px;height: 60px;position: absolute;right: 9px;top: 110px;cursor: pointer;}
 
 .module{margin-top: 20px;}
 .fenlei{width: 172px;float: left;margin-right: 1px;}

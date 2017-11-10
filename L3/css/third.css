@@ -1,0 +1,31 @@
+.dizhi{
+	   width: 1190px;
+	   margin: 0 auto;
+	   line-height: 50px;}
+.dizhi a{
+	   color:#1D7AD9;}
+.dizhi a:last-child{
+	    color: #666;} 
+
+
+.list{
+	   background-color: #EDF7FF;
+	   padding: 15px 0;}
+.listcon{
+	   width: 1190px;
+	   margin:0 auto ;
+	   height: 299px;
+	   position: relative;}
+.listwrap{
+	   position: absolute;
+	   width: 1190px;
+}
+.listton{
+	   float: left;
+	   background-color: #FFFFFF;
+	   width: 288px;
+	   display: inline;
+	   margin: 0 3px 0 4px;
+	   border: 1px solid #BFE4FF;
+	   padding-bottom: 12px;
+}
