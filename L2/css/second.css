@@ -24,7 +24,9 @@
 .buyingcon{position: relative;margin-top: 10px;}
 .buyingmid{width: 1190px;height: 352px;position: relative;}
 .buyinglist{position:absolute;width: 1190px;}
-.buyinglist dl{float: left;width: 220px;height: 350px;border: 1px solid #ddd;margin: 0 8px;display: inline;}
+.buyinglist dl{float: left;width: 220px;height: 350px;border: 1px solid #ddd;margin: 0 10px;display: inline;}
+.buyinglist dl:first-of-type{margin-left: 0;}
+.buyinglist dl:last-of-type{margin-right: 0;}
 .buyinglist dl dt img{width: 200px;height: 200px;}
 .buyinglist dl dt{padding: 10px 10px 8px 10px;}
 .buyinglist dl dd{padding: 0px 10px;height:24px;line-height: 24px;}
@@ -37,15 +39,15 @@
 .buyingtime strong{display: inline-block;float: left;background: url(../img/whole.png) no-repeat -134px -236px;width: 22px;height: 22px;margin-right: 10px;}
 .buyingtime span i{font-style: normal;color: #FF7701;font-weight: bold;}
 .buyinggo a{display:block;height: 32px;color: #FFFFFF;text-align: center;line-height: 32px;font-family: "微软雅黑";font-size: 14px;background-color: #B71C37;border-radius: 10px;margin-top: 10px;}
-.buyingzuo{background: url(../img/whole.png)no-repeat 0 -111px;display: block;width: 60px;height: 60px;position: absolute;left: 9px;top: 110px;cursor: pointer;}
-.buyingyou{background: url(../img/whole.png)no-repeat -65px -111px;display: block;width: 60px;height: 60px;position: absolute;right: 9px;top: 110px;cursor: pointer;}
+.buyingzuo{background: url(../img/whole.png)no-repeat 0 -111px;display: block;width: 60px;height: 60px;position: absolute;left: 1px;top: 110px;cursor: pointer;z-index: 999;}
+.buyingyou{background: url(../img/whole.png)no-repeat -65px -111px;display: block;width: 60px;height: 60px;position: absolute;right: 1px;top: 110px;cursor: pointer;}
 
 .module{margin-top: 20px;}
 .fenlei{width: 172px;float: left;margin-right: 1px;}
 .blue .fenlei{background-color: #1D7AD9;height: 440px;}
 .blue .fltitle{background: url(../img/whole.png) no-repeat -302px 0;}
 .blue .fllist li.current a{color: #1D7AD9;}
-.fltitle{float: left;width: 18px;height: 440px;padding: 110px 13px 0 10px;font-family: "微软雅黑";font-size: 18px;color: #fff;}
+.fltitle{float: left;width: 18px;padding: 110px 13px 0 13px;font-family: "微软雅黑";font-size: 18px;color: #fff;}
 .flcon{float: right;width: 116px;}
 .fltop{background: url(../img/whole.png)no-repeat -203px -241px;width: 21px;height: 10px;margin: 20px 0 0 48px;cursor: pointer;}
 .flmid{margin-top: 15px;height: 360px;position: relative;overflow: hidden;zoom: 1;}
@@ -55,20 +57,20 @@
 .fllist li:first-child a{color: #086BD0;}
 .fllist li:first-child{background: url(../img/whole.png) no-repeat 0 -235px;}
 .flbot{background: url(../img/whole.png)no-repeat -233px -241px;width: 21px;height: 10px;margin: 5px 0 0 48px;cursor: pointer;}
-.modulebig{width: 440px;height: 440px;float: left;}
-.flright{width: 552px;float: right;}
-/*.flright tr td{border: 1px solid #ddd;}*/
+.modulebig{width: 440px;float: left;}
+
 .flright{float: right;width: 552px;/*border-left: 1px solid #ddd;
 border-top: 1px solid #ddd;*/}
-.flright li{float: left;width: 154px;height: 218px;/*border-bottom: 1 solid #ddd;border-right:1px solid #ddd;*/}
-.flright li dl{ height:216px; /*margin:0 0 0 16px;*/ width:154px;}
-.flright li dl dt img{ width:154px;}
-/*.flright li dl dt{ padding-top:12px; margin-bottom:4px;}*/
+.flright li{float: left;width: 175px;height: 218px;/*border-bottom: 1 solid #ddd;border-right:1px solid #ddd;*/margin-right: 6px;}
+.flright li dl{ height:218px; margin:0 10px 0 15px; width:175px;}
+.flright li dl dt img{ width:158px;height: 158px;}
+.flright li dl dt{ padding-top:12px; margin-bottom:4px;}
 .flright li dl dd{ line-height:20px;}
 .flright li dl dd strong{ color:#f70;}
 
 .modulehot{margin-top: 20px;}
-.modulehot dl{float:left;width: 166px;display: inline-block;margin: 0 16px;}
-.modulehot dl dt img{width: 166px;}
+.modulehot dl{float:left;width:188px;display: inline-block;/*margin: 0 16px;*/margin-right: 10px;}
+.modulehot dl dt img{width: 188px;}
+.modulehot dl dt img:last-of-type{margin-right: 0;}
 .modulehot dl dt{margin-bottom: 8px;}
 .modulehot dl dd{ line-height:20px;}

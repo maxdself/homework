@@ -37,7 +37,7 @@
 .price i{float: right;font-style: normal;color: #666666;margin-left: 5px;padding-top: 4px;}
 .price strong{float: right;background: url(../img/whole.png) no-repeat -218px 0;right;center;width: 17px;height: 17px;margin-top: 4px;}
 .price span{float: left;color: #FF7700;font-family: "微软雅黑";font-size: 14px;padding-top: 4px;}
-.changezuo{background: url(../img/whole.png) no-repeat 0 -111px;display: block;width: 60px;height: 60px;position: absolute;left: 0;top: 110px;cursor: pointer;}
+.changezuo{background: url(../img/whole.png) no-repeat 0 -111px;display: block;width: 60px;height: 60px;position: absolute;left: 0;top: 110px;cursor: pointer;z-index: 999;}
 .changeyou{ background:url(../img/whole.png) no-repeat -65px -111px; display:block; width:60px; height:60px; position:absolute; right:0px; top:110px; cursor:pointer;}
 
 .channel{width: 1190px;margin: 0 auto;margin-top: 12px;}
