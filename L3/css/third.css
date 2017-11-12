@@ -15,12 +15,15 @@
 	   width: 1190px;
 	   margin:0 auto ;
 	   height: 299px;
-	   position: relative;}
+	   position: relative;
+	   overflow: hidden;zoom: 1;}
+
 .listwrap{
 	   position: absolute;
 	   width: 1190px;
 }
-.listton{
+
+.listone{
 	   float: left;
 	   background-color: #FFFFFF;
 	   width: 288px;
@@ -29,3 +32,88 @@
 	   border: 1px solid #BFE4FF;
 	   padding-bottom: 12px;
 }
+
+.listtit{
+	    height: 45px;
+	    line-height: 45px;
+	    padding-left: 15px;
+}
+.listtit a{
+	   font-family: "微软雅黑";
+	   font-size: 16px;
+	   color: #1D7AD9;
+}
+
+.listlink{
+	   padding-left: 12px;
+}
+.listlink a{
+	   float: left;
+	   width: 87px;
+	   height: 30px;
+	   line-height: 30px;
+	   text-align: center;
+	   background-color: #ECF7FF;
+	   margin: 2px 2px 0 0 ;
+}
+.listlink a:nth-child(5){
+	   background-color:#086BD0;
+}
+
+.listpro{
+	 width: 265px;
+	 height: 150px;
+	 position: relative;
+	 margin: 12px 0 0 12px;
+	 overflow: hidden;zoom: 1;
+}
+.listdl dl{
+	 width: 265px;
+	 overflow: hidden;zoom: 1;
+	 padding-left: 10px;
+}
+.listdl dl dt{
+	float: left;
+	width: 100px;
+	margin-right: 10px;
+}
+.listdl dl dt img{
+	width: 100px;
+	height: 150px;
+}
+.listdl dl dd{
+	line-height: 22px;
+	margin-top: 15px;
+}
+.listdl dl dd a{
+	color: #999999;
+}
+.listdl dl dd strong{
+	color: #F70;
+}
+.listspan{
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+.listspan span{
+	display: inline-block;
+	width: 35px;
+	height: 5px;
+	background-color: #ddd;
+	margin-right: 10px;
+}
+.listspan span:nth-child(2){
+	background-color: #086BD0;
+}
+
+.wrap1{ width:1190px; margin:0 auto;}
+.familyadd{ margin-top:20px;}
+.familydl dl{ float:left; width:210px; display:inline; margin:20px 14px 0 14px;}
+.familydl dl dt img{ width:208px; height:208px; border-radius:50%; border:1px solid #ddd;}
+.familydl dl dt a{ display:block; width:210px; height:210px; overflow:hidden; zoom:1; position:relative;}
+.familydl dl dt span{ position:absolute; width:210px; height:210px; background-color:#000;filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6; border-radius:50%; color:#fff; font-family:"微软雅黑"; left:0; top:0; line-height:210px; text-align:center; font-size:18px;}
+.familydl dl dt{ margin-bottom:10px;}
+.familydl dl dd{ line-height:22px; text-align:center;}
+.familydl dl dd strong{ color:#f70;}
+.familytit{ width:210px; float:left; display:inline; margin:25px 14px 0 14px; text-align:center;}
