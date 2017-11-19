@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>五星红旗</title>
+		<style type="text/css">
+			#canvas{
+				width: 900px;
+				height: 600px;
+				border: 1px solid red;
+				margin: 50px auto;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="1000" height="1000"></canvas>
+		
+		<script type="text/javascript">
+			window.onload=function(){
+			var canvas=document.getElementById("canvas");
+			canvas.width=1000;
+			canvas.height=1000;
+			var context=canvas.getContext("2d");
+			
+			var width=canvas.width;
+			var height=canvas.height;
+			context.fillStyle="red";
+			context.fillRect(0,0,width,height);
+			
+			context.lineWidth=10;
+			
+	    drawStar(context, 50, 125, 200, 200, 0, 'yellow', 'yellow'); 
+        drawStar(context, 10, 30, 370, 60, 30, 'yellow', 'yellow');
+        drawStar(context, 10, 30, 450, 180, 30, 'yellow', 'yellow'); 
+      drawStar(context, 10, 30, 430, 330, 30, 'yellow', 'yellow');
+      drawStar(context, 10, 30, 310, 400, 30, 'yellow', 'yellow');
+			
+			function drawStar (context, r, R, x, y, rot, color, fillcolor) {
+        context.beginPath();
+        for (var i = 0; i < 5; i++) {
+          context.lineTo(Math.cos((18 + i*72 - rot)/180 * Math.PI) * R + x,
+                    -Math.sin((18 + i*72 - rot)/180 * Math.PI) * R + y);
+
+         context.lineTo(Math.cos((54 + i*72 - rot)/180 * Math.PI) * r + x,
+                    -Math.sin((54 + i*72 - rot)/180 * Math.PI) * r + y);
+        }
+       context.closePath();
+        context.strokeStyle = color;
+        context.fillStyle = fillcolor;
+        context.fill();
+        context.stroke();
+      }
+			
+			
+			
+			
+			}
+		</script>
+	</body>
+</html>
