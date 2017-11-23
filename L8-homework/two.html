@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			html{
+				font-size: calc(100vw/7.5);
+			}
+			/*.all{
+				background-color: #F0F2F5;
+				width: 7.5rem;
+				
+			}*/
+			body{
+				overflow: hidden;
+			}
+			.top{
+				height: 0.9rem;
+				background-image: linear-gradient(to bottom,#FEFEFE,#F0F0F0);
+				position: relative;
+				border-bottom: 1px solid #999;
+			}
+			.ico1 img{
+				position: absolute;
+				width: 0.25rem;
+				height: 0.4rem;
+				left: 0.3rem;
+				top: 0.25rem;
+			}
+			.ico2 img{
+				position: absolute;
+				width: 0.35rem;
+				height: 0.4rem;
+				right: 0.2rem;
+				top: 0.25rem;
+			}
+			#search1{
+				width: 4.5rem;
+				height: 0.45rem;
+				border: 0.03rem solid #ddd;
+				border-radius: 1rem;
+				padding-left: 0.3rem;
+				float: left;
+				margin-left: 1.5rem;
+				margin-top: 0.2rem;
+			}
+			.container{
+				/*padding-top:0.9rem;*/
+				height: 100vh;
+				box-sizing: border-box;
+				background-color: #f3f5f7;
+				overflow: hidden;
+			}
+			.slide{
+				position: relative;
+				height: inherit;
+				width: 1.5rem;
+				
+			}
+			.slide ul{
+				margin: 0;
+				padding: 0;
+				font-size: 0.22rem;
+				line-height: 0.9rem;
+				text-align: center;
+				background-color: #ffffff;
+				border-top:solid 1px #e5e5e5;
+				border-right:solid 1px #e5e5e5;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				
+			}
+			.slide ul li{
+				border-bottom:solid 1px #e5e5e5;
+			}
+			.slide ul li a{
+				color:#010101;
+				text-decoration: none;
+			}
+			/*.contright{
+				position: relative;
+			}*/
+		     .crtop img{
+		     	width: 5.76rem;
+		     	position: absolute;
+		     	right: 0.12rem;
+		     	top: 1rem;
+		     }
+		     .crone{
+		     	position: absolute;
+		     	right: 0.12rem;
+		     	top: 2.4rem;
+		     }
+		     .crtwo{
+		     	position: absolute;
+		     	right: 0.12rem;
+		     	top: 5rem;
+		     }
+		     .crthree{
+		     	position: absolute;
+		     	right: 0.12rem;
+		     	top: 7.6rem;
+		     }
+		     .crone a,.crtwo a,.crthree a{
+		     	text-decoration: none;
+		     	color: black;
+		     	font-family: "微软雅黑";
+		     	font-size: 0.2rem;
+		     }
+		     .crone a:first-child{
+		     	margin-right: 4rem;
+		     }
+		     .changyong,.zhuanchang{
+		     	width: 5.76rem;
+		     	height: 1.8rem;
+		     	background-color: #fff;
+		     	list-style: none;
+		     }
+		     .remen{
+		     	width: 5.76rem;
+		     	height: 3.1rem;
+		     	background-color: #fff;
+		     	list-style: none;
+		     	
+		     	position: relative;
+		     }
+		     .remen dl {
+		     	float: left;
+		     }
+		     .changyong img,.zhuanchang img{
+		     	width: 1.2rem;
+		     	height: 1.2rem;
+		     	margin-left: 0.6rem;
+		     	margin-top: 0.05rem;
+		     }
+		     .r1 dt img{
+		     	width:1rem;
+		     	height: 1rem;
+		     	margin-left: 0.6rem;
+		     	margin-top: 0.05rem;
+		     	
+		     	position: absolute;
+		     }
+		     .r2 dt img{
+		     	width:1rem;
+		     	height: 1rem;
+		     	margin-left: 1rem;
+		     	margin-top:0.05rem;
+		     	
+		     	position: absolute;
+		     }
+		     .r3 dt img{
+		     	width:1rem;
+		     	height: 1rem;
+		     	margin-left: 1rem;
+		     	margin-top:0.05rem;
+		     	
+		     	position: absolute;
+		     }
+		     .r4 dt img{
+		     	width:1rem;
+		     	height: 1rem;
+		     	margin-left: -4.12rem;
+		     	margin-top:1.6rem;
+		     	
+		     	position: absolute;
+		     }
+		     .r5 dt img{
+		     	width:1rem;
+		     	height: 1rem;
+		     	margin-left: -2.4rem;
+		     	margin-top:1.6rem;
+		     	
+		     	position: absolute;
+		     }
+		      .r6 dt img{
+		     	width:1rem;
+		     	height: 1rem;
+		     	margin-left: -0.65rem;
+		     	margin-top:1.6rem;
+		     	
+		     	position: absolute;
+		     }
+		     .changyong li:last-child,.zhuanchang li:last-child{
+		     	font-family: "微软雅黑";
+		     	font-size: 0.2rem;
+		     	margin-left: 0.9rem;
+		     }
+		     .remen  .r1 dd a{
+		     	font-family: "微软雅黑";
+		     	font-size: 0.2rem;
+		     	margin-left: 0.9rem;
+		     	
+		     	float: left;
+		     	margin-top: 1.2rem;
+		     }
+		     .remen  .r2 dd a{
+		     	font-family: "微软雅黑";
+		     	font-size: 0.2rem;
+		     	margin-left: 1.3rem;
+		     	
+		     	float: left;
+		     	margin-top: 1.2rem;
+		     }
+		     .remen  .r3 dd a{
+		     	font-family: "微软雅黑";
+		     	font-size: 0.2rem;
+		     	margin-left: 1.3rem;
+		     	
+		     	float: left;
+		     	margin-top: 1.2rem;
+		     }
+		     .remen  .r4 dd a{
+		     	font-family: "微软雅黑";
+		     	font-size: 0.2rem;
+		     	margin-left: -3.8rem;
+		     	
+		     	float: left;
+		     	margin-top:2.7rem;
+		     }
+		      .remen  .r5 dd a{
+		     	font-family: "微软雅黑";
+		     	font-size: 0.2rem;
+		     	margin-left: -2.1rem;
+		     	
+		     	float: left;
+		     	margin-top:2.7rem;
+		     }
+		     .remen  .r6 dd a{
+		     	font-family: "微软雅黑";
+		     	font-size: 0.2rem;
+		     	margin-left: -0.4rem;
+		     	
+		     	float: left;
+		     	margin-top:2.7rem;
+		     }
+		</style>
+		
+	</head>
+	<body>
+		
+			<div class="top">
+				<a href="#" class="ico1"><img src="img/ico1_03.png"/></a>
+				<div class="search">
+					<span></span>
+					<input type="search" name="search1" id="search1" value="穿上羽绒服，麻麻再也不用怕我冷" />
+				</div>
+				<a href="#"  class="ico2"><img src="img/ico2_03.png"/></a>
+			</div>
+			<div class="container">
+				<div class="slide">
+				<ul>
+				<li><a href="#">电视</a></li>
+				<li><a href="#">冰箱</a></li>
+				<li><a href="#">手机</a></li>
+				<li><a href="#">电脑</a></li>
+				<li><a href="#">空调</a></li>
+				<li><a href="#">电视</a></li>
+				<li><a href="#">冰箱</a></li>
+				<li><a href="#">手机</a></li>
+				<li><a href="#">电脑</a></li>
+				<li><a href="#">空调</a></li>
+				<li><a href="#">电视</a></li>
+				<li><a href="#">冰箱</a></li>
+				<li><a href="#">手机</a></li>
+				<li><a href="#">电脑</a></li>
+				<li><a href="#">空调</a></li>
+				<li><a href="#">电视</a></li>
+				<li><a href="#">冰箱</a></li>
+				<li><a href="#">手机</a></li>
+				<li><a href="#">电脑</a></li>
+				<li><a href="#">空调</a></li>
+				<li><a href="#">电视</a></li>
+				<li><a href="#">冰箱</a></li>
+				<li><a href="#">手机</a></li>
+				<li><a href="#">电脑</a></li>
+				<li><a href="#">空调</a></li>
+				</ul>
+			</div>
+			<div class="contright">
+				
+				<div class="crtop">
+					<a href="#"><img src="img/1.jpg"/></a>
+				</div>
+				
+				<div class="crone">
+			<a href="#">常用分类</a>
+			<a href="#"><span>清空</span></a>
+			<ul class="changyong">
+			<li><img src="img/2.jpg"/></li>
+			<li>Dunhill</li>
+			</ul>
+				</div>
+				
+				
+				<div class="crtwo">
+			<a href="#">专场推荐</a>
+			<ul class="zhuanchang">
+			<li><img src="img/1.png"/></li>
+			<li>R11 Plus</li>
+			</ul>
+				</div>
+				
+			<div class="crthree">
+			<a href="#">热门分类</a>
+			<a href="#"><span>排行榜</span></a>
+			<div class="remen">
+				<dl class="r1">
+				<dt><img src="img/3.jpg"/></dt>
+				<dd><a href="#">手机</a></dd>
+			    </dl>
+			    <dl class="r2">
+				<dt><img src="img/4.jpg"/></dt>
+				<dd><a href="#">电脑</a></dd>
+			    </dl>
+			    <dl class="r3">
+				<dt><img src="img/5.jpg"/></dt>
+				<dd><a href="#">空调</a></dd>
+			    </dl>
+			    <dl class="r4">
+				<dt><img src="img/6.jpg"/></dt>
+				<dd><a href="#">儿童</a></dd>
+			    </dl>
+			    <dl class="r5">
+				<dt><img src="img/7.jpg"/></dt>
+				<dd><a href="#">啤酒</a></dd>
+			    </dl>
+			     <dl class="r6">
+				<dt><img src="img/8.jpg"/></dt>
+				<dd><a href="#">海参</a></dd>
+			    </dl>
+			</div>
+				</div>	
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript">
+				var slide=document.querySelector(".slide");
+				var ul=document.querySelector(".slide ul");
+				var startY=0;
+				var topOffset=0;
+				
+				slide.ontouchstart=function(e){
+					startY=e.touches[0].pageY;
+				};
+				
+				slide.ontouchmove=function(e){
+					var y=e.touches[0].pageY;
+					var t=topOffset+y-startY;
+					t>150?150:t;
+					
+				if(t<($(".slide").height()-$(".top").height()-$(".slide ul").height()-150)){
+				
+	t=$(".slide").height()-$(".top").height()-$(".slide ul").height()-150;}
+				
+					ul.style.top=t+"px";
+				};
+	
+				slide.ontouchend=function(e){
+			var y = e.changedTouches[0].pageY;
+			    var t=topOffset+y-startY;
+					 
+					 
+					if(t>0){
+						$(".slide ul").animate({top:"0px"},300);
+						t=0;
+					}
+				
+				var a=$(".slide").height()-$(".top").height()-($(".slide ul").height()+t);
+				
+				if(a>0){
+					t=$(".slide").height()-$(".top").height()-$(".slide ul").height()
+					
+					$(".slide ul").animate({
+						top:t+"px"
+					},300);
+				}
+				topOffset=t;
+				startY=y;
+			}
+	
+				slide.ontouchcancel = function(e){
+				console.log('取消');
+			}
+			</script>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
