@@ -1,0 +1,97 @@
+#fullpage .section:nth-child(1) { 
+				background-image: url(img/bg2_87283a0.jpg);
+			}
+#fullpage .section:nth-child(2) {
+				background-image: url(img/bg-kj_4d6c383.png);
+			}
+#fullpage .section:nth-child(3) {
+				background-image: url(img/renwu-bg_c26f167.png);
+			}
+#fullpage .section:nth-child(4) {
+				background-image: url(img/bj-so_ff09f3c.png);
+			}
+#fullpage .section:nth-child(5) {
+				background-image: url(img/bj-net_3cad4e6.png);
+			}
+#fullpage .section:nth-child(6) {
+				background-image: url(img/renwu-bg_c26f167.png);
+			}
+#menu{
+				position: fixed;
+				right: 20px;
+				top: 25%;
+				z-index: 999;
+				list-style: none;
+				width: 90px;
+				margin: 0;
+				padding: 0;
+			}
+#menu li{
+				margin-top: 10px;
+				font-size: 14px;
+				"Microsoft Yahei"
+			}
+#menu li a{
+				display: block;
+				text-decoration: none;
+				width: 90px;
+				background-color: #fff;
+				text-align: center;
+				padding:10px 0;
+				color: #2286EC;
+				font-family: "微软雅黑";
+			}
+#menu .active a{
+				background-color: #0074EA;
+				color: #fff;
+			}
+.section{
+				position: relative;
+			}
+.section .shiji,.shiji1{
+				font-family: "微软雅黑";
+				font-size: 300px;
+				color: #fff;
+				font-weight: 600;
+				text-shadow: 15px 20px 5px #318EF4;
+			}
+.section .time{
+				font-family: "微软雅黑";
+				font-size: 60px;
+				color: #fff;
+				font-weight: 600;
+				text-shadow: 10px 10px 5px #318EF4;
+			}
+.section .wenzi{
+				font-family: "微软雅黑";
+				font-size: 16px;
+				color: #0074EA;
+				background-color: #fff;
+				width: 300px;
+				text-align: center;
+				padding: 5px 0;
+				
+				
+			}
+.section .shiji{
+				position: absolute;
+				top: 180px;
+				left: 400px;
+			}
+.section .shiji1{
+				position: absolute;
+				top: 130px;
+				left:700px;
+			}
+.section .time{
+				position: absolute;
+				bottom: 80px;
+				left:800px;
+			}
+.section .wenzi{
+				position: absolute;
+				bottom: 30px;
+				left:600px;
+				
+			}
+		
